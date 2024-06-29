@@ -23,12 +23,12 @@ function call(count){
 const next = document. querySelector("#next");
     next.addEventListener("click",function(){
         call(count);
-        count = (count <21) ? ++count :0;// Add Next button
+         count++;// Add Next button
     })
 const previous = document. querySelector("#previous");
     previous.addEventListener("click",function(){
         
-        count = (count>0) ? --count :21;
+        count--;
         call(count);
     })//Create navigation buttons for product display
     
