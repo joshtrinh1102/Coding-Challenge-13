@@ -3,8 +3,9 @@ function main(){
     .then(res =>
          res.json())
     .then(data => {
-        console.log(data)
-    });//fetch data
+        console.log(data),
+        })
+    //fetch data
+    .catch(error => console.log(error));//catch error
 
-    
 }
